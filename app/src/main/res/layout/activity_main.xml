@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgb"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtsenha"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="350sp"
+        android:background="@drawable/edittext"
+        android:hint="Digite a Senha"
+        android:textAlignment="center"
+        android:maxLength="8"
+        android:textColor="#F60707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/containerinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/edittext"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtsenha">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/senhainfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A senha deve conter:"
+            android:textAlignment="center"
+            android:textColor="#555252"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/az"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="a-z"
+            android:textAlignment="center"
+            android:textColor="#555252"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/AZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A-Z"
+            android:textAlignment="center"
+            android:textColor="#555252"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/numeros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0-9"
+            android:textAlignment="center"
+            android:textColor="#555252"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/caracterEspecial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#$?..."
+            android:textAlignment="center"
+            android:textColor="#555252"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/caracter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8 caracteres"
+            android:textAlignment="center"
+            android:textColor="#555252"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/btn_loguin"
+        android:textColor="@color/white"
+        android:text="Entrar"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerinfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
